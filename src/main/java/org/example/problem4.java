@@ -1,8 +1,5 @@
 package org.example;
 
-import java.util.HashSet;
-
-import static java.nio.file.Files.move;
 
 public class problem4 {
 
