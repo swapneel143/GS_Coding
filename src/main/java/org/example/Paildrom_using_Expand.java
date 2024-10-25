@@ -4,24 +4,42 @@ public class Paildrom_using_Expand {
 
     public static void main(String[] args) {
 
-        String s = "madam" ;
-        System.out.println(isPalindrome(s));
+        String s = "madam";
+        System.out.println(expandAroundCenter(s));
+
     }
 
-    public static  boolean isPalindrome(String s) {
 
 
-        int left = 0;
-        int right = s.length() - 1;
+    public static boolean expandAroundCenter(String str) {
+       int length = str.length();
+  boolean ans = true;
+        int mid = length / 2;
+  int l,r;
+  if(length%2==0) {
+      l = mid;
+      r = mid-1;
+  }
+  else
+  {
+      l=mid;
+      r=mid;
+  }
 
-        while (left < right) {
-            if (s.charAt(left) != s.charAt(right)) {
-                return false; // Not a palindrome
+        while(l>=0 && r<str.length()) {
+            if (str.charAt(l) == str.charAt(r) ){
+                l--;
+                r++;
+
+
             }
-            left++;
-            right--;
-        }
+            else {
+                ans = false;
+                break;
+            }
 
-        return true; // Is a palindrome
+        }
+        return ans;
+
     }
 }
