@@ -5,7 +5,6 @@ public class Median_TwoArray_Problem5 {
     public static void main(String[] args) {
         int arr1[] = {2, 3, 5, 8};
         int arr2[] = {10, 12, 14, 16, 18,1};
-
         System.out.println("Median of two array "+ medianOfArray(arr1,arr2));
     }
 
@@ -23,8 +22,6 @@ public class Median_TwoArray_Problem5 {
             int l2 = pickB==0 ? Integer.MIN_VALUE:B[pickB-1];
             int r1= pickA==A.length? Integer.MAX_VALUE:A[pickA];
             int r2= pickB==B.length?Integer.MAX_VALUE:B[pickB];
-
-
 
             if(l1<=r2 && l2<r1)
             {
