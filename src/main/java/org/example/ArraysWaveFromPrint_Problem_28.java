@@ -1,8 +1,6 @@
 package org.example;
 
-import java.util.Arrays;
-
-public class ArraysWaveFromPrint {
+public class ArraysWaveFromPrint_Problem_28 {
 
     public static void main(String[] args) {
 
