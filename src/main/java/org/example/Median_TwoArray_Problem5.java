@@ -34,7 +34,7 @@ public class Median_TwoArray_Problem5 {
             int r1= pickA==A.length? Integer.MAX_VALUE:A[pickA];
             int r2= pickB==B.length?Integer.MAX_VALUE:B[pickB];
 
-            if(l1<=r2 && l2<r1)
+            if(l1<=r2 && l2<=r1)
             {
                 if((A.length+ B.length)%2==0)
                 {
