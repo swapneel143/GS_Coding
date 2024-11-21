@@ -43,7 +43,7 @@ public class problem_13_shortestSubArray {
 
            currentSum+=a[right];
 
-           while (currentSum==k)
+           while (currentSum>=k)
            {
                minLength = Math.min(minLength,right-left+1);
                currentSum-=a[left];
